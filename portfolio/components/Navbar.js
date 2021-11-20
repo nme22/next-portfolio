@@ -1,4 +1,4 @@
-import { HStack, Button, useColorMode } from '@chakra-ui/react';
+import { HStack, Button, useColorMode, Box } from '@chakra-ui/react';
 import { useColorModeValue } from '@chakra-ui/color-mode';
 import Link from 'next/link';
 
@@ -6,22 +6,29 @@ const PortNavbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   const bg = useColorModeValue('#FF5F1F', '#00FFFF');
-  const color = useColorModeValue('white', 'gray.500');
+  const color = useColorModeValue('whiteAlpha.700', 'gray.600');
   return (
-    <HStack mb={4} p={4} borderStyle="double">
-      <Button onClick={toggleColorMode}>
-        Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
+    <HStack
+      m={3}
+      mb={4}
+      p={2}
+      w="100%"
+      borderStyle="single"
+      bgGradient="linear(to-r, orange.400, teal.400 )"
+      borderRadius={45}
+      spacing={50}
+    >
+      <Button onClick={toggleColorMode} bg="whiteAlpha.100" color={color}>
+        Toggle Light
       </Button>
-      {/* <Box mbb={4} bg={bg} color={color}>
-          This should change color based on the color mode.
-        </Box> */}
-      <Link href="/">
-        <Button bg={bg} color={color}>
+
+      <Link href="/" color={color}>
+        <Button bg="whiteAlpha.100" color={color}>
           Projects
         </Button>
       </Link>
       <Link href="/">
-        <Button bg={bg} color={color}>
+        <Button bg="whiteAlpha.100" color={color}>
           Contact
         </Button>
       </Link>
