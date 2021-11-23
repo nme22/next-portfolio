@@ -1,5 +1,5 @@
 import PortNavbar from './Navbar';
-import Footer from './Footer';
+import PortFooter from './Footer';
 import { VStack } from '@chakra-ui/react';
 
 const Layout = ({ children }) => {
@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     <VStack>
       <PortNavbar />
       {children}
-      <Footer />
+      <PortFooter />
     </VStack>
   );
 };
