@@ -11,12 +11,12 @@ const PortNavbar = () => {
     <HStack
       m={3}
       mb={4}
-      p={2}
-      w="30%"
+      p={3}
+      justifyContent="space-between"
+      w={500}
       borderStyle="single"
       bgGradient="linear(to-r, orange.400, teal.400 )"
-      borderRadius={45}
-      spacing={50}
+      borderRadius={50}
     >
       <Button onClick={toggleColorMode} bg="whiteAlpha.100" color={color}>
         Toggle Light
