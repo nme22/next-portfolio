@@ -1,4 +1,4 @@
-import { HStack, Button } from '@chakra-ui/react';
+import { HStack, Button, Link } from '@chakra-ui/react';
 import {
   FaFacebook,
   FaTwitter,
@@ -8,13 +8,19 @@ import {
 const PortFooter = () => {
   return (
     <HStack>
-      <Button colorScheme="facebook" leftIcon={FaFacebook}>
-        Facebook
-      </Button>
-      <Button colorScheme="twitter" leftIcon={FaTwitter}>
-        Twitter
-      </Button>
-      <Button colorScheme="gray">Github</Button>
+      <Link href="https://www.facebook.com/navid.ebrahimi.10/">
+        <Button colorScheme="facebook" leftIcon={FaFacebook}>
+          Facebook
+        </Button>
+      </Link>
+      <Link href="https://twitter.com/nme_22">
+        <Button colorScheme="twitter" leftIcon={FaTwitter}>
+          Twitter
+        </Button>
+      </Link>
+      <Link href="https://github.com/nme22">
+        <Button colorScheme="gray">Github</Button>
+      </Link>
     </HStack>
   );
 };
