@@ -37,12 +37,11 @@ export default function Home() {
             p={5}
             m={1}
             h={250}
-            w={250}
+            w={275}
             borderRadius={30}
           />
-          Sicklerville, NJ
         </Center>
-        <Text color="whiteAlpha.900" p={2} fontSize={20}>
+        <Text color="whiteAlpha.900" p={2} fontSize={20} mr={2}>
           My name is Navid Ebrahimi and I'm a first generation Iranian web
           developer! Thank you for taking the time to visit my portfolio page.
           Feel free to checkout any projects im currently working on by clicking

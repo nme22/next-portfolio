@@ -24,10 +24,15 @@ const PortNavbar = () => {
 
       <Link href="/" color={color}>
         <Button bg="whiteAlpha.100" color={color}>
+          Home
+        </Button>
+      </Link>
+      <Link href="/Projects" color={color}>
+        <Button bg="whiteAlpha.100" color={color}>
           Projects
         </Button>
       </Link>
-      <Link href="/">
+      <Link href="/Contact">
         <Button bg="whiteAlpha.100" color={color}>
           Contact
         </Button>
