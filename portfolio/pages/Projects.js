@@ -1,11 +1,5 @@
-import {
-  VStack,
-  Heading,
-  Button,
-  Box,
-  Center,
-  Container,
-} from '@chakra-ui/react';
+import { VStack, Heading, Button, Box, Center, Image } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   return (
@@ -30,8 +24,33 @@ const Projects = () => {
         h={500}
         w={500}
         borderRadius={50}
+        spacing={3}
       >
-        <Container></Container>
+        <Box
+          w={200}
+          h="15%"
+          bgColor="whiteAlpha.400"
+          borderRadius={10}
+          d="flex"
+          flexDir="column"
+          p={1}
+          m={2}
+        >
+          <motion.button
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 1.0 }}
+            fontWeight="semibold"
+          >
+            DateNight
+          </motion.button>
+          <Image
+            src="/datingIMG.png"
+            alt="Heart"
+            height={10}
+            width={10}
+            borderRadius={20}
+          />
+        </Box>
       </VStack>
     </Box>
   );
