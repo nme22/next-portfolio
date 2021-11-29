@@ -6,6 +6,7 @@ import {
   Center,
   Image,
   HStack,
+  Link,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import {
@@ -42,7 +43,7 @@ const Projects = () => {
         spacing={3}
       >
         <Box
-          w={200}
+          w={250}
           h="20%"
           bgColor="whiteAlpha.400"
           borderRadius={10}
@@ -58,21 +59,61 @@ const Projects = () => {
           >
             DateNight
           </motion.button>
-          <HStack p={2}>
-            <Image
-              src="/datingIMG.png"
-              alt="Heart"
-              height={9}
-              width={9}
-              borderRadius={20}
-            />
-            <Image
-              src="/next-js.svg"
-              alt="NextJs"
-              height={9}
-              width={9}
-              borderRadius={20}
-            />
+          <HStack p={4} justifyContent="space-around">
+            <motion.button
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 1.0 }}
+            >
+              <Image
+                src="/datingIMG.png"
+                alt="Heart"
+                height={9}
+                width={9}
+                borderRadius={20}
+              />
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 1.0 }}
+            >
+              <Link href="https://nextjs.org/">
+                <Image
+                  src="/next-js.svg"
+                  alt="NextJs"
+                  height={9}
+                  width={9}
+                  borderRadius={20}
+                />
+              </Link>
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 1.0 }}
+            >
+              <Link href="https://vercel.com/">
+                <Image
+                  src="/vercellogo.png"
+                  alt="Vercel"
+                  height={9}
+                  width={9}
+                  borderRadius={20}
+                />
+              </Link>
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 1.0 }}
+            >
+              <Link href="https://chakra-ui.com/">
+                <Image
+                  src="/chakraui.png"
+                  alt="Chakra-UI"
+                  height={9}
+                  width={9}
+                  borderRadius={20}
+                />
+              </Link>
+            </motion.button>
           </HStack>
         </Box>
       </VStack>
