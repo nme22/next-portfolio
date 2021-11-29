@@ -1,5 +1,21 @@
-import { VStack, Heading, Button, Box, Center, Image } from '@chakra-ui/react';
+import {
+  VStack,
+  Heading,
+  Button,
+  Box,
+  Center,
+  Image,
+  HStack,
+} from '@chakra-ui/react';
 import { motion } from 'framer-motion';
+import {
+  FaSun,
+  FaMoon,
+  FaInstagram,
+  FaGithub,
+  SiNextdotjs,
+  FaReact,
+} from 'react-icons/fa';
 
 const Projects = () => {
   return (
@@ -28,7 +44,7 @@ const Projects = () => {
       >
         <Box
           w={200}
-          h="15%"
+          h="20%"
           bgColor="whiteAlpha.400"
           borderRadius={10}
           d="flex"
@@ -43,13 +59,22 @@ const Projects = () => {
           >
             DateNight
           </motion.button>
-          <Image
-            src="/datingIMG.png"
-            alt="Heart"
-            height={10}
-            width={10}
-            borderRadius={20}
-          />
+          <HStack p={2}>
+            <Image
+              src="/datingIMG.png"
+              alt="Heart"
+              height={9}
+              width={9}
+              borderRadius={20}
+            />
+            <Image
+              src="/next-js.svg"
+              alt="NextJS"
+              height={9}
+              width={9}
+              borderRadius={20}
+            />
+          </HStack>
         </Box>
       </VStack>
     </Box>
