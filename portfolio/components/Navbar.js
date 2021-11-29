@@ -1,15 +1,13 @@
-import { HStack, Button, useColorMode, Box } from '@chakra-ui/react';
+import { HStack, Button, useColorMode, Box, Text } from '@chakra-ui/react';
 import { useColorModeValue } from '@chakra-ui/color-mode';
 import Link from 'next/link';
+import { FaReact } from 'react-icons/fa';
 
 const PortNavbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   const bg = useColorModeValue('#FF5F1F', '#00FFFF');
-  const color = useColorModeValue(
-    'linear(to-r, orange.400, teal.400 )',
-    'gray.600'
-  );
+  const color = useColorModeValue('whiteAlpha.700', 'gray.700');
   return (
     <HStack
       m={3}
@@ -17,28 +15,14 @@ const PortNavbar = () => {
       p={3}
       justifyContent="space-around"
       w={{ base: '100%', md: '100%', lg: '100%' }}
-      borderStyle="single"
-      borderRadius={12}
     >
-      <Button onClick={toggleColorMode} bg="whiteAlpha.100" color={color}>
+      <Button onClick={toggleColorMode} bg="orange.300" color={color}>
         Toggle Light
       </Button>
 
-      <Link href="/" color={color}>
-        <Button bg="whiteAlpha.100" color={color}>
-          Home
-        </Button>
-      </Link>
-      <Link href="/Projects" color={color}>
-        <Button bg="whiteAlpha.100" color={color}>
-          Projects
-        </Button>
-      </Link>
-      <Link href="/Contact">
-        <Button bg="whiteAlpha.100" color={color}>
-          Contact
-        </Button>
-      </Link>
+      <Link href="/">Home</Link>
+      <Link href="/Projects">Projects</Link>
+      <Link href="/Contact">Contact</Link>
     </HStack>
   );
 };

@@ -36,7 +36,7 @@ const Projects = () => {
       </Center>
 
       <VStack
-        bgGradient="linear(to-r, orange.400, teal.400 )"
+        bgGradient="linear(to-l, orange.400, teal.400 )"
         h={500}
         w={500}
         borderRadius={50}
