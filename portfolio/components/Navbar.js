@@ -13,7 +13,7 @@ const PortNavbar = () => {
       mb={4}
       p={3}
       justifyContent="space-between"
-      w={500}
+      w="100%"
       borderStyle="single"
       bgGradient="linear(to-r, orange.400, teal.400 )"
       borderRadius={50}
