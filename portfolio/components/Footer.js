@@ -1,4 +1,4 @@
-import { HStack, Button, Link, IconButton } from '@chakra-ui/react';
+import { HStack, Button, Link, Box } from '@chakra-ui/react';
 
 import {
   FaSun,
@@ -11,23 +11,25 @@ import {
 
 const PortFooter = () => {
   return (
-    <HStack pb={-50} h={150}>
-      <Link href="https://www.facebook.com/navid.ebrahimi.10/">
-        <Button colorScheme="facebook" leftIcon={FaFacebook}>
-          <FaFacebook />
-        </Button>
-      </Link>
-      <Link href="https://twitter.com/nme_22">
-        <Button colorScheme="twitter" leftIcon={FaTwitter}>
-          <FaTwitter />
-        </Button>
-      </Link>
-      <Link href="https://github.com/nme22">
-        <Button colorScheme="gray" leftIcon={FaGithub}>
-          <FaGithub />
-        </Button>
-      </Link>
-    </HStack>
+    <Box mb="-50px" minHeight="100%">
+      <HStack mt={50} h={100}>
+        <Link href="https://www.facebook.com/navid.ebrahimi.10/">
+          <Button colorScheme="facebook" leftIcon={FaFacebook}>
+            <FaFacebook size={30} />
+          </Button>
+        </Link>
+        <Link href="https://twitter.com/nme_22">
+          <Button colorScheme="twitter" leftIcon={FaTwitter}>
+            <FaTwitter size={30} />
+          </Button>
+        </Link>
+        <Link href="https://github.com/nme22">
+          <Button colorScheme="gray" leftIcon={FaGithub}>
+            <FaGithub size={30} />
+          </Button>
+        </Link>
+      </HStack>
+    </Box>
   );
 };
 

@@ -2,7 +2,6 @@ import Navbar from '../components/Navbar.js';
 import {
   HStack,
   Container,
-  VStack,
   Image,
   Stack,
   Text,
