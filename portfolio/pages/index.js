@@ -3,22 +3,24 @@ import {
   HStack,
   Container,
   Image,
-  Stack,
   Text,
   TagLabel,
   Center,
+  Box,
+  Heading,
 } from '@chakra-ui/react';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <Stack
+    <Box
       w={500}
       bgGradient="linear(to-r, orange.400, teal.400 )"
       borderRadius="50"
       mb={3}
       h={500}
       d="flex"
+      spacing={2}
     >
       <Container
         maxW="container.lg"
@@ -48,6 +50,6 @@ export default function Home() {
           concerns click on the contact button above!
         </Text>
       </Container>
-    </Stack>
+    </Box>
   );
 }

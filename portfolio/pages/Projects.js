@@ -23,7 +23,6 @@ const Projects = () => {
     <Box>
       <Center>
         <Heading
-          p={1}
           m={2}
           bgGradient="linear(to-r, orange.400, teal.400 )"
           bgClip="text"
@@ -69,7 +68,7 @@ const Projects = () => {
             />
             <Image
               src="/next-js.svg"
-              alt="NextJS"
+              alt="NextJs"
               height={9}
               width={9}
               borderRadius={20}
