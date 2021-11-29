@@ -10,13 +10,8 @@ import {
 
 const Contact = () => {
   return (
-    <Box
-      bgGradient="linear(to-r, orange.400, teal.400 )"
-      h="100%"
-      w="100%"
-      borderRadius={20}
-    >
-      <VStack h="100%">
+    <Box bgGradient="linear(to-r, orange.400, teal.400 )" h="100%" w="100%">
+      <VStack>
         <FormControl p={1} m={1}>
           <FormLabel>Email</FormLabel>
           <Input w="100%"></Input>

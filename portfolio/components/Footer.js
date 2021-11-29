@@ -11,7 +11,7 @@ import {
 
 const PortFooter = () => {
   return (
-    <Box mb="-50px" minHeight="100%">
+    <Box mb="-50px" position="sticky">
       <HStack mt={50} h={100}>
         <Link href="https://www.facebook.com/navid.ebrahimi.10/">
           <Button colorScheme="facebook" leftIcon={FaFacebook}>

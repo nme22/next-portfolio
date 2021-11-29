@@ -1,24 +1,13 @@
-import Navbar from '../components/Navbar.js';
-import {
-  HStack,
-  Container,
-  Image,
-  Text,
-  TagLabel,
-  Center,
-  Box,
-  Heading,
-} from '@chakra-ui/react';
-import styles from '../styles/Home.module.css';
+import { Container, Image, Text, Center, Box } from '@chakra-ui/react';
 
 export default function Home() {
   return (
     <Box
-      w={500}
-      bgGradient="linear(to-r, orange.400, teal.400 )"
+      w={{ base: '80%', md: '90%', lg: '100%' }}
+      h={{ base: '80%', md: '90%', lg: '100%' }}
+      bg="gray"
       borderRadius="50"
       mb={3}
-      h={500}
       d="flex"
       spacing={2}
     >
@@ -27,19 +16,18 @@ export default function Home() {
         bg="whiteAlpha.300"
         borderRadius="50"
         mb={3}
-        h={500}
-        w="full"
+        h="500px"
+        w="100%"
         justifyContent="center"
       >
         <Center>
           <Image
-            src="https://avatars.githubusercontent.com/u/77805927?s=400&u=338e09bc3029c212ba90ff34cdc9c37e65d612f0&v=4"
+            src="/youngshwap.png"
             alt="picture of a male with a beard"
             p={5}
             m={1}
             h={250}
-            w={275}
-            borderRadius={30}
+            w={350}
           />
         </Center>
         <Text color="whiteAlpha.900" p={2} fontSize={20} mr={2}>

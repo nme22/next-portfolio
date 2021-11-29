@@ -6,17 +6,19 @@ const PortNavbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   const bg = useColorModeValue('#FF5F1F', '#00FFFF');
-  const color = useColorModeValue('whiteAlpha.700', 'gray.600');
+  const color = useColorModeValue(
+    'linear(to-r, orange.400, teal.400 )',
+    'gray.600'
+  );
   return (
     <HStack
       m={3}
       mb={4}
       p={3}
       justifyContent="space-around"
-      w={500}
+      w={{ base: '100%', md: '100%', lg: '100%' }}
       borderStyle="single"
-      bgGradient="linear(to-r, orange.400, teal.400 )"
-      borderRadius={50}
+      borderRadius={12}
     >
       <Button onClick={toggleColorMode} bg="whiteAlpha.100" color={color}>
         Toggle Light
