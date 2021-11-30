@@ -16,7 +16,17 @@ const PortNavbar = () => {
       justifyContent="space-around"
       w={{ base: '100%', md: '100%', lg: '100%' }}
     >
-      <Button onClick={toggleColorMode} bg="orange.300" color={color}>
+      <Button
+        onClick={toggleColorMode}
+        bg="orange.300"
+        color={color}
+        _hover={{
+          bgColor: 'rebeccapurple',
+        }}
+        _active={{
+          borderColor: 'orange.400',
+        }}
+      >
         Toggle Light
       </Button>
 

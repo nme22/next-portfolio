@@ -11,9 +11,10 @@ import { useColorModeValue } from '@chakra-ui/color-mode';
 
 const Contact = () => {
   const bg = useColorModeValue('whiteAlpha.400', 'gray.600');
+  const color = useColorModeValue('whiteAlpha.900', 'gray.500');
   return (
-    <Box bg={bg} h="100%" w="100%">
-      <FormControl>
+    <Box bg={bg} h="500px" w="100%" d="flex">
+      <FormControl justifyContent="space-between">
         <VStack>
           <FormLabel color="Orange" fontWeight="bold">
             Email
@@ -23,10 +24,18 @@ const Contact = () => {
             {' '}
             Details
           </FormLabel>
-          <Textarea w="80%" h="100%" bg="WhiteAlpha" />
+          <Textarea w="80%" h="300px" bg="WhiteAlpha" />
+          <Button
+            bg="orange.300"
+            color={color}
+            _hover={{
+              bgColor: 'rebeccapurple',
+            }}
+          >
+            Reach Out!
+          </Button>
         </VStack>
       </FormControl>
-      <Button>Reach Out!</Button>
     </Box>
   );
 };
