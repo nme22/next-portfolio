@@ -1,4 +1,4 @@
-import { Container, Image, Text, Center, Box } from '@chakra-ui/react';
+import { Container, Heading, Image, Text, VStack, Box } from '@chakra-ui/react';
 import { useColorModeValue } from '@chakra-ui/color-mode';
 
 export default function Home() {
@@ -13,23 +13,14 @@ export default function Home() {
       d="flex"
       spacing={2}
     >
-      <Container
-        maxW="container.lg"
-        bg={bg}
-        borderRadius="50"
-        mb={3}
-        h="500px"
-        w="100%"
-        justifyContent="center"
+      <VStack
+        w={{ base: '80%', md: '90%', lg: '100%' }}
+        h={{ base: '80%', md: '100%', lg: '100%' }}
       >
-        <Text pt={5} fontSize={20}>
-          My name is Navid Ebrahimi and I'm a first generation Iranian web
-          developer! Thank you for taking the time to visit my portfolio page.
-          Feel free to checkout any projects im currently working on by clicking
-          the github button below! If you have any questions, comments, or
-          concerns click on the contact button above!
-        </Text>
-        <Center>
+        <Heading fontSize="48px" fontStyle="normal">
+          Full-Stack Junior Developer{' '}
+        </Heading>
+        <Container>
           <Image
             src="/youngshwap.png"
             alt="picture of a male with a beard"
@@ -38,7 +29,25 @@ export default function Home() {
             h={250}
             w={350}
           />
-        </Center>
+        </Container>
+      </VStack>{' '}
+      <Container
+        maxW="container.lg"
+        bg={bg}
+        borderRadius="5%"
+        mb={3}
+        w={{ base: '80%', md: '90%', lg: '100%' }}
+        h={{ base: '80%', md: '100%', lg: '100%' }}
+        justifyContent="center"
+      >
+        <VStack>
+          <Text fontSize="24px" fontStyle="oblique">
+            My name is Navid Ebrahimi and I'm a first generation Iranian web
+            developer! Thank you for taking the time to visit my portfolio page.
+            Feel free to checkout any projects im currently working on by
+            clicking the github button below!
+          </Text>
+        </VStack>
       </Container>
     </Box>
   );
