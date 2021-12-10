@@ -1,66 +1,32 @@
-import {
-  Box,
-  Input,
-  FormControl,
-  FormLabel,
-  VStack,
-  Textarea,
-  Button,
-} from '@chakra-ui/react';
+import { Box, VStack, Heading, Text, Button, Link } from '@chakra-ui/react';
 import { useColorModeValue } from '@chakra-ui/color-mode';
 import { useState } from 'react';
 
 const Contact = () => {
   const bg = useColorModeValue('whiteAlpha.400', 'gray.600');
-  const color = useColorModeValue('cyan.600', 'gray.500');
-  const [Email, setEmail] = useState('');
-  const [Details, setDetails] = useState('');
-
-  function handleEmailChange(e) {
-    setEmail(e.target.value);
-  }
-  function handleDetailsChange(e) {
-    setDetails(e.target.value);
-  }
+  const color = useColorModeValue('gray.600', 'orange.300');
 
   return (
-    <Box bg={bg} h="500px" w="100%" d="flex">
-      <FormControl justifyContent="space-between">
-        <VStack>
-          <FormLabel color="Orange" fontWeight="bold">
-            Email
-          </FormLabel>
-          <Input
-            w="50%"
-            bg="whiteAlpha"
-            _focus={{
-              borderColor: 'Orange',
-            }}
-            type="text"
-            placeholder="JohnDoe@gmail.com"
-            value={Email}
-            onChange={handleEmailChange}
-            fontWeight="bold"
-            color={color}
-          ></Input>
-          <FormLabel color="Orange" fontWeight="bold">
-            {' '}
-            Details
-          </FormLabel>
-          <Textarea
-            w="80%"
-            h="300px"
-            bg="WhiteAlpha"
-            _focus={{
-              borderColor: 'Orange',
-            }}
-            type="text"
-            placeholder="Let me hear your thoughts!"
-            value={Details}
-            onChange={handleDetailsChange}
-            fontWeight="bold"
-            color={color}
-          />
+    <Box
+      bg={bg}
+      w={{ base: '80%', md: '90%', lg: '100%' }}
+      h={{ base: '80%', md: '90%', lg: '100%' }}
+      d="flex"
+      borderRadius="5%"
+    >
+      <VStack justifyContent="space-between">
+        <Heading color={color} p={2} fontSize="48px">
+          Thank you for visiting the page!{' '}
+        </Heading>
+        <br />
+        <Text color={color} fontSize="24px" fontStyle="oblique" p={2} m={2}>
+          I Appreciate you for taking the time to check out my personal site! If
+          you have any questions, comments, concerns, or you just want to
+          connect with me ,then click the button below to send me an email! If
+          you dont feel like doing that then feel free to reach out via one of
+          the social links in below!
+        </Text>
+        <Link href="mailto:navidmebrahimi22@gmail.com">
           <Button
             bg="orange.300"
             color="white"
@@ -70,8 +36,8 @@ const Contact = () => {
           >
             Reach Out!
           </Button>
-        </VStack>
-      </FormControl>
+        </Link>
+      </VStack>
     </Box>
   );
 };
