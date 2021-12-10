@@ -3,7 +3,8 @@ import { useColorModeValue } from '@chakra-ui/color-mode';
 
 export default function Home() {
   const bg = useColorModeValue('whiteAlpha.300', 'gray.600');
-  const color = useColorModeValue('');
+  const color = useColorModeValue('gray.600', 'orange.300');
+  const headingColor = useColorModeValue('purple.600', 'gray.600');
   return (
     <Box
       w={{ base: '80%', md: '90%', lg: '100%' }}
@@ -17,12 +18,10 @@ export default function Home() {
         w={{ base: '80%', md: '90%', lg: '100%' }}
         h={{ base: '80%', md: '100%', lg: '100%' }}
       >
-        <Heading fontSize="48px" fontStyle="normal">
-          Navid M Ebrahimi
-          <br />
-          Full-Stack Junior Developer{' '}
+        <Heading fontSize="48px" fontStyle="oblique" color={headingColor}>
+          Navid M Ebrahimi: Full-Stack Junior Developer{' '}
         </Heading>
-        <Container>
+        <Box>
           <Image
             src="/youngshwap.png"
             alt="picture of a male with a beard"
@@ -31,19 +30,18 @@ export default function Home() {
             h={250}
             w={350}
           />
-        </Container>
-      </VStack>{' '}
-      <Container
-        maxW="container.lg"
-        bg={bg}
-        borderRadius="5%"
-        mb={3}
-        w={{ base: '80%', md: '90%', lg: '100%' }}
-        h={{ base: '80%', md: '90%', lg: '100%' }}
-        justifyContent="center"
-      >
-        <VStack>
-          <Text fontSize="24px" fontStyle="oblique">
+        </Box>
+
+        <Container
+          maxW="container.lg"
+          bg={bg}
+          borderRadius="5%"
+          mb={3}
+          w={{ base: '80%', md: '90%', lg: '100%' }}
+          h={{ base: '80%', md: '90%', lg: '100%' }}
+          justifyContent="center"
+        >
+          <Text fontSize="24px" fontStyle="oblique" color={color}>
             My name is Navid Ebrahimi and I'm a first generation Iranian web
             developer! Throughout my lifetime i've worked quite a few different
             jobs. It wasn't until 2021 that I decided to dive into the world of
@@ -55,8 +53,8 @@ export default function Home() {
             on the socials or contact me via email if you want to collaborate on
             anything!
           </Text>
-        </VStack>
-      </Container>
+        </Container>
+      </VStack>
     </Box>
   );
 }

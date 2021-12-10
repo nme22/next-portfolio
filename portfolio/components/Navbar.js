@@ -2,11 +2,12 @@ import { HStack, Button, useColorMode, Box, Text } from '@chakra-ui/react';
 import { useColorModeValue } from '@chakra-ui/color-mode';
 import Link from 'next/link';
 import { FaReact } from 'react-icons/fa';
+import { withTheme } from '@emotion/react';
 
 const PortNavbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
-  const bg = useColorModeValue('#FF5F1F', '#00FFFF');
+  const bg = useColorModeValue('whiteAlpha.300', 'gray.700');
   const color = useColorModeValue('whiteAlpha.700', 'gray.700');
   return (
     <HStack
@@ -15,6 +16,7 @@ const PortNavbar = () => {
       p={3}
       justifyContent="space-around"
       w={{ base: '100%', md: '100%', lg: '100%' }}
+      bg={bg}
     >
       <Button
         onClick={toggleColorMode}
