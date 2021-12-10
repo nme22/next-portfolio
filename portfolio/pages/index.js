@@ -18,6 +18,8 @@ export default function Home() {
         h={{ base: '80%', md: '100%', lg: '100%' }}
       >
         <Heading fontSize="48px" fontStyle="normal">
+          Navid M Ebrahimi
+          <br />
           Full-Stack Junior Developer{' '}
         </Heading>
         <Container>
@@ -37,15 +39,21 @@ export default function Home() {
         borderRadius="5%"
         mb={3}
         w={{ base: '80%', md: '90%', lg: '100%' }}
-        h={{ base: '80%', md: '100%', lg: '100%' }}
+        h={{ base: '80%', md: '90%', lg: '100%' }}
         justifyContent="center"
       >
         <VStack>
           <Text fontSize="24px" fontStyle="oblique">
             My name is Navid Ebrahimi and I'm a first generation Iranian web
-            developer! Thank you for taking the time to visit my portfolio page.
-            Feel free to checkout any projects im currently working on by
-            clicking the github button below!
+            developer! Throughout my lifetime i've worked quite a few different
+            jobs. It wasn't until 2021 that I decided to dive into the world of
+            tech. Starting from learning HTML5, CSS, and basic JavaScript to
+            utilizing frameworks and librarys from other developers to build
+            stunning apps from start to finish! In my freetime, I enjoy gaming,
+            soccer, animes, and spending time with my family. Feel free to
+            checkout any projects im currently towards on Github and reach out
+            on the socials or contact me via email if you want to collaborate on
+            anything!
           </Text>
         </VStack>
       </Container>
