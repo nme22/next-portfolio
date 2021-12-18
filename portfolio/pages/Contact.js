@@ -20,11 +20,11 @@ const Contact = () => {
         </Heading>
         <br />
         <Text color={color} fontSize="24px" fontStyle="oblique" p={2} m={2}>
-          I Appreciate you for taking the time to check out my personal site! If
-          you have any questions, comments, concerns, or you just want to
-          connect with me ,then click the button below to send me an email! If
-          you dont feel like doing that then feel free to reach out via one of
-          the social links in below!
+          I Appreciate you taking the time to check out my personal site! If you
+          have any questions, comments, concerns, or you just want to connect
+          with me ,then click the button below to send me an email! If you dont
+          feel like doing that then feel free to reach out via one of the social
+          links in below!
         </Text>
         <Link href="mailto:navidmebrahimi22@gmail.com">
           <Button

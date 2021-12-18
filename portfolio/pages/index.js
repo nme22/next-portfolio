@@ -1,5 +1,6 @@
 import { Container, Heading, Image, Text, VStack, Box } from '@chakra-ui/react';
 import { useColorModeValue } from '@chakra-ui/color-mode';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Home() {
   const bg = useColorModeValue('whiteAlpha.300', 'gray.600');
@@ -18,9 +19,35 @@ export default function Home() {
         w={{ base: '80%', md: '90%', lg: '100%' }}
         h={{ base: '80%', md: '100%', lg: '100%' }}
       >
-        <Heading fontSize="48px" fontStyle="oblique" color={headingColor}>
-          Navid M Ebrahimi: Full-Stack Junior Developer{' '}
-        </Heading>
+        <motion.h2
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 3 }}
+        >
+          <Heading
+            fontSize="48px"
+            fontStyle="oblique"
+            color={headingColor}
+            textShadow="2px 1px orange"
+          >
+            Navid M Ebrahimi
+          </Heading>
+        </motion.h2>
+        <motion.h2
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 5 }}
+        >
+          <Heading
+            fontSize="48px"
+            fontStyle="oblique"
+            color={headingColor}
+            textShadow="2px 1px orange"
+          >
+            Full-Stack Junior Developer{' '}
+          </Heading>
+        </motion.h2>
+
         <Box>
           <Image
             src="/youngshwap.png"
@@ -41,14 +68,16 @@ export default function Home() {
           h={{ base: '80%', md: '90%', lg: '100%' }}
           justifyContent="center"
         >
-          <Text fontSize="24px" fontStyle="oblique" color={color}>
-            My name is Navid Ebrahimi and I'm a first generation Iranian web
-            developer! Throughout my lifetime i've worked quite a few different
-            jobs. It wasn't until 2021 that I decided to dive into the world of
-            tech. Starting from learning HTML5, CSS, and basic JavaScript to
-            utilizing frameworks and librarys from other developers to build
-            stunning apps from start to finish! In my freetime, I enjoy gaming,
-            soccer, animes, and spending time with my family. Feel free to
+          <Text
+            fontSize="24px"
+            fontStyle="oblique"
+            color={color}
+            textShadow="1px 1px"
+          >
+            First generation Iranian web developer! Throughout my lifetime I
+            never thought I'd catch fire coding! From learning HTML5, CSS, and
+            basic JavaScript to utilizing frameworks and librarys from other
+            developers to build stunning apps from start to finish! Feel free to
             checkout any projects im currently towards on Github and reach out
             on the socials or contact me via email if you want to collaborate on
             anything!
