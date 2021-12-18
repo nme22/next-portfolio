@@ -10,14 +10,6 @@ import {
 } from '@chakra-ui/react';
 import { useColorModeValue } from '@chakra-ui/color-mode';
 import { motion } from 'framer-motion';
-import {
-  FaSun,
-  FaMoon,
-  FaInstagram,
-  FaGithub,
-  SiNextdotjs,
-  FaReact,
-} from 'react-icons/fa';
 
 const Projects = () => {
   const bg = useColorModeValue('whiteAlpha.300', 'gray.600');
@@ -130,8 +122,11 @@ const Projects = () => {
             whileTap={{ scale: 1.0 }}
             fontWeight="semibold"
           >
-            ReadMe Generator
+            <Link href="https://github.com/nme22/README-Generator">
+              ReadMe Generator
+            </Link>
           </motion.button>
+
           <HStack p={4} justifyContent="space-around">
             <motion.button
               whileHover={{ scale: 1.2 }}
@@ -139,8 +134,8 @@ const Projects = () => {
             >
               <Link href="https://nextjs.org/">
                 <Image
-                  src="/next-js.svg"
-                  alt="NextJs"
+                  src="/javascript-logo.svg"
+                  alt="JavaScript"
                   height={{ base: '40px', md: '36px', lg: '32px' }}
                   width={{ base: '40px', md: '36px', lg: '32px' }}
                   borderRadius="50%"
@@ -151,24 +146,10 @@ const Projects = () => {
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 1.0 }}
             >
-              <Link href="https://vercel.com/">
+              <Link href="https://nodejs.org">
                 <Image
-                  src="/vercellogo.png"
-                  alt="Vercel"
-                  height={{ base: '40px', md: '36px', lg: '32px' }}
-                  width={{ base: '40px', md: '36px', lg: '32px' }}
-                  borderRadius="50%"
-                />
-              </Link>
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 1.0 }}
-            >
-              <Link href="https://chakra-ui.com/">
-                <Image
-                  src="/chakraui.png"
-                  alt="Chakra-UI"
+                  src="nodejs-icon.svg"
+                  alt="Node.Js"
                   height={{ base: '40px', md: '36px', lg: '32px' }}
                   width={{ base: '40px', md: '36px', lg: '32px' }}
                   borderRadius="50%"
