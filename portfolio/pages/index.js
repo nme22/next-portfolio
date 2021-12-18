@@ -36,7 +36,7 @@ export default function Home() {
         <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 5 }}
+          transition={{ duration: 4 }}
         >
           <Heading
             fontSize="48px"
@@ -68,12 +68,7 @@ export default function Home() {
           h={{ base: '80%', md: '90%', lg: '100%' }}
           justifyContent="center"
         >
-          <Text
-            fontSize="24px"
-            fontStyle="oblique"
-            color={color}
-            textShadow="1px 1px"
-          >
+          <Text fontSize="24px" fontStyle="oblique" color={color}>
             First generation Iranian web developer! Throughout my lifetime I
             never thought I'd catch fire coding! From learning HTML5, CSS, and
             basic JavaScript to utilizing frameworks and librarys from other
